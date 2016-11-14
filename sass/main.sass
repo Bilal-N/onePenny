@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans')
+// Variables
+$color-gray: #2F3238
+$color-lightgray: #32353B
+$color-darkgray: #26292E
+$color-darkergray: #1C1E21
+$color-darkestgray: #161719
+$color-matt-pink: #B95356
+
+body
+  font-family: 'Fira Sans', sans-serif
+
+.main-menu
+  background-color: $color-darkgray
+  h3
+    color: #fff
+    text-align: center
+    width: 100px
+    margin: 0 auto
+    padding: 10px 0
+    margin-bottom: 15px
+    text-transform: uppercase
+  ul
+    list-style: none
+    li
+      // background-color: red
+      &:hover
+        cursor: pointer
+        background-color: $color-darkergray
+      a
+        display: block
+        width: 100px
+        margin: 0 auto
+        text-align: center
+        padding: 10px 0
+        // background-color: tomato
+        text-transform: uppercase
+        text-decoration: none
+        color: #fff
