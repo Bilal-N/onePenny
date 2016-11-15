@@ -1,0 +1,52 @@
+@import "color-variables"
+
+.main-menu
+  background-color: $color-darkgray
+  position: relative
+  h3
+    color: #fff
+    text-align: left
+    font-size: 1em
+    margin: 0 auto
+    padding: 10px 0 10px 10px
+    text-transform: uppercase
+  .nav-btn
+    // background-color: tomato
+    height: 20px
+    width: 25px
+    position: absolute
+    top: 10px
+    right: 10px
+    &:hover
+      cursor: pointer
+    span
+      display: block
+      position: relative
+      &:first-child
+        background-color: #fff
+        height: 4px
+      &:nth-child(2)
+        background-color: #fff
+        height: 4px
+        top: 5px
+      &:last-child
+        background-color: #fff
+        height: 4px
+        top: 10px
+
+
+
+  ul
+    list-style: none
+    li
+      &:hover
+        background-color: $color-darkergray
+      a
+        display: block
+        font-size: 0.8em
+        margin: 0 auto
+        text-align: center
+        padding: 10px 0
+        text-transform: uppercase
+        text-decoration: none
+        color: #fff

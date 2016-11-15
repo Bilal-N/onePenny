@@ -1,0 +1,28 @@
+@import "color-variables"
+@import "mixins"
+
+.packages
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  background-color: $color-darkestgray
+  padding: 35px 30px
+  .single-package
+    min-width: 275px
+    margin: 30px
+    background-color: $color-darkergray
+    @include border-radius(5px)
+    &:hover
+      cursor: pointer
+      transform: scale(1.2)
+      background-color: $color-matt-pink
+      transition: all 500ms
+    h2, h3
+      text-align: center
+      font-weight: normal
+      padding: 10px 0 0 0
+    .package-desc
+      padding: 20px 0 10px 0
+      list-style: none
+      li
+        text-align: center
